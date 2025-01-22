@@ -1,0 +1,153 @@
+data:extend({
+
+  {
+    type = "recipe",
+    name = "gold-plate",
+    icon = "__common-prototypes-graphics__/icons/items/gold-ingot.png",
+    category = "smelting",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "gold-ore", amount = 1},
+    },
+    results = {{type="item", name="gold-plate", amount=1}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "molten-gold",
+    icon = "__common-prototypes-graphics__/icons/fluids/molten-gold.png",
+    category = "metallurgy",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 32,
+    ingredients = {
+      {type = "item", name = "gold-ore", amount = 50},
+      {type = "item", name = "calcite", amount = 1},
+    },
+    results = {{type="fluid", name="molten-gold", amount=500}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "gold-cable",
+    icon = "__common-prototypes-graphics__/icons/items/gold-wire.png",
+    category = "electronics",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    energy_required = .5,
+    ingredients = {
+      {type = "item", name = "gold-plate", amount = 1},
+    },
+    results = {{type="item", name="gold-cable", amount=2}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "casting-gold-cable",
+    category = "metallurgy",
+    subgroup = "ringworld-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__common-prototypes-graphics__/icons/recipes/casting-gold-cable.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-gold", amount = 5, fluidbox_multiplier = 5},
+    },
+    energy_required = 1,
+    auto_recycle = false,
+    results = {{type = "item", name = "gold-cable", amount = 2}},
+    allow_productivity = true
+  },
+  {
+    type = "recipe",
+    name = "casting-gold-plate",
+    category = "metallurgy",
+    subgroup = "ringworld-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__common-prototypes-graphics__/icons/recipes/casting-gold-plate.png",
+    enabled = false,
+    ingredients =
+    {
+      {type = "fluid", name = "molten-gold", amount = 5, fluidbox_multiplier = 5},
+    },
+    energy_required = 3.2,
+    auto_recycle = false,
+    results = {{type = "item", name = "gold-plate", amount = 1}},
+    allow_productivity = true
+  },
+
+  {
+    type = "recipe",
+    name = "glass-plate",
+    icon = "__common-prototypes-graphics__/icons/items/glass-plate-1.png",
+    category = "smelting",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "silica-sand", amount = 5},
+    },
+    results = {{type="item", name="glass-plate", amount=1}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "glass-billet-reuse",
+    icon = "__common-prototypes-graphics__/icons/items/glass-plate-1.png",
+    category = "smelting",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "glass-billet", amount = 10},
+    },
+    results = {{type="item", name="glass-plate", amount=1}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "molten-glass",
+    icon = "__common-prototypes-graphics__/icons/fluids/molten-glass.png",
+    category = "metallurgy",
+    subgroup = "ringworld-processes",
+    order = "c[lithium]-b[lithium-plate]",
+    auto_recycle = false,
+    energy_required = 3.2,
+    ingredients = {
+      {type = "item", name = "silica-sand", amount = 50},
+      {type = "item", name = "glass-billet", amount = 5},
+    },
+    results = {{type="fluid", name="molten-glass", amount=100}},
+    allow_productivity = true,
+    enabled = false
+  },
+  {
+    type = "recipe",
+    name = "casting-glass-plate",
+    category = "metallurgy",
+    subgroup = "ringworld-processes",
+    order = "b[casting]-h[casting-copper-cable]",
+    icon = "__common-prototypes-graphics__/icons/recipes/casting-glass-plate.png",
+    ingredients =
+    {
+      {type = "fluid", name = "molten-glass", amount = 5, fluidbox_multiplier = 5},
+    },
+    energy_required = 3.2,
+    auto_recycle = false,
+    results = {{type = "item", name = "glass-plate", amount = 1}},
+    allow_productivity = true,
+    enabled = false,
+  },
+
+})

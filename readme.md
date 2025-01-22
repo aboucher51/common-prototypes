@@ -1,0 +1,2 @@
+# Common Prototypes
+The motivation of this mod is primarily so that multiple factorio mods can share similar items, and it all appears organic to the player. Sand is sand, wherever you get it. Trying to keep the resources simple and generic.
