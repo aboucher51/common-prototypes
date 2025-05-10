@@ -113,5 +113,36 @@ data:extend({
     weight = 0.25 * kg,
     ingredient_to_weight_coefficient = 0.25
   },
+  {
+    type = "item",
+    name = "neodymium-ore",
+    icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png",
+    pictures =
+    {
+      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-3.png", scale = 0.5, mipmap_count = 4}
+    },
+    subgroup = "mirandus-processes",
+    order = "d[neodymium]",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
+    stack_size = 50,
+    weight = 2 * kg
+  },
+  {
+    type = "item",
+    name = "neodymium-plate",
+    icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-plate.png",
+    subgroup = "mirandus-processes",
+    order = "d[stone]",
+    inventory_move_sound = item_sounds.resource_inventory_move,
+    pick_sound = item_sounds.resource_inventory_pickup,
+    drop_sound = item_sounds.resource_inventory_move,
+    stack_size = 50,
+    weight = 2 * kg
+  },
 
 })
