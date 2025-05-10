@@ -116,13 +116,13 @@ data:extend({
   {
     type = "item",
     name = "neodymium-ore",
-    icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png",
+    icon = "__common-prototypes-graphics__/icons/items/neodymium-ore.png",
     pictures =
     {
-      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-1.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-2.png", scale = 0.5, mipmap_count = 4},
-      {size = 64, filename = "__metal-and-stars-graphics__/graphics/icons/neodymium-ore-3.png", scale = 0.5, mipmap_count = 4}
+      {size = 64, filename = "__common-prototypes-graphics__/icons/items/neodymium-ore.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__common-prototypes-graphics__/icons/items/neodymium-ore-1.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__common-prototypes-graphics__/icons/items/neodymium-ore-2.png", scale = 0.5, mipmap_count = 4},
+      {size = 64, filename = "__common-prototypes-graphics__/icons/items/neodymium-ore-3.png", scale = 0.5, mipmap_count = 4}
     },
     subgroup = "mirandus-processes",
     order = "d[neodymium]",
@@ -135,7 +135,7 @@ data:extend({
   {
     type = "item",
     name = "neodymium-plate",
-    icon = "__metal-and-stars-graphics__/graphics/icons/neodymium-plate.png",
+    icon = "__common-prototypes-graphics__/icons/items/neodymium-plate.png",
     subgroup = "mirandus-processes",
     order = "d[stone]",
     inventory_move_sound = item_sounds.resource_inventory_move,
