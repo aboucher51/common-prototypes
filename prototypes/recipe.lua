@@ -5,8 +5,6 @@ data:extend({
     name = "gold-plate",
     icon = "__common-prototypes-graphics__/icons/items/gold-ingot.png",
     category = "smelting",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
     auto_recycle = false,
     energy_required = 3.2,
     ingredients = {
@@ -21,8 +19,8 @@ data:extend({
     name = "molten-gold",
     icon = "__common-prototypes-graphics__/icons/fluids/molten-gold.png",
     category = "metallurgy",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-d[common-proto]-a[molten-gold]",
     auto_recycle = false,
     energy_required = 32,
     ingredients = {
@@ -38,8 +36,6 @@ data:extend({
     name = "gold-cable",
     icon = "__common-prototypes-graphics__/icons/items/gold-wire.png",
     category = "electronics",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
     energy_required = .5,
     ingredients = {
       {type = "item", name = "gold-plate", amount = 1},
@@ -52,8 +48,8 @@ data:extend({
     type = "recipe",
     name = "casting-gold-cable",
     category = "metallurgy",
-    subgroup = "ringworld-processes",
-    order = "b[casting]-h[casting-copper-cable]",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-i[common-proto]-b[casting-gold-cable]",
     icon = "__common-prototypes-graphics__/icons/recipes/casting-gold-cable.png",
     enabled = false,
     ingredients =
@@ -69,8 +65,8 @@ data:extend({
     type = "recipe",
     name = "casting-gold-plate",
     category = "metallurgy",
-    subgroup = "ringworld-processes",
-    order = "b[casting]-h[casting-copper-cable]",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-i[common-proto]-a[casting-gold-plate]",
     icon = "__common-prototypes-graphics__/icons/recipes/casting-gold-plate.png",
     enabled = false,
     ingredients =
@@ -88,8 +84,6 @@ data:extend({
     name = "glass-plate",
     icon = "__common-prototypes-graphics__/icons/items/glass-plate-1.png",
     category = "smelting",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
     auto_recycle = false,
     energy_required = 3.2,
     ingredients = {
@@ -104,8 +98,8 @@ data:extend({
     name = "glass-billet-reuse",
     icon = "__common-prototypes-graphics__/icons/items/glass-plate-1.png",
     category = "smelting",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
+    subgroup = "raw-material",
+    order = "a[smelting]-i[common-proto]-e[glass-billet-reuse]",
     auto_recycle = false,
     energy_required = 3.2,
     ingredients = {
@@ -120,8 +114,8 @@ data:extend({
     name = "molten-glass",
     icon = "__common-prototypes-graphics__/icons/fluids/molten-glass.png",
     category = "metallurgy",
-    subgroup = "ringworld-processes",
-    order = "c[lithium]-b[lithium-plate]",
+    subgroup = "vulcanus-processes",
+    order = "a[melting]-d[common-proto]-b[molten-gold]",
     auto_recycle = false,
     energy_required = 3.2,
     ingredients = {
@@ -136,8 +130,8 @@ data:extend({
     type = "recipe",
     name = "casting-glass-plate",
     category = "metallurgy",
-    subgroup = "ringworld-processes",
-    order = "b[casting]-h[casting-copper-cable]",
+    subgroup = "vulcanus-processes",
+    order = "b[casting]-i[common-proto]-c[casting-glass-plate]",
     icon = "__common-prototypes-graphics__/icons/recipes/casting-glass-plate.png",
     ingredients =
     {
@@ -153,8 +147,6 @@ data:extend({
     type = "recipe",
     name = "neodymium-plate",
     category = "smelting",
-    subgroup = "mirandus-processes",
-    order = "c[lithium]-b[lithium-plate]",
     auto_recycle = false,
     energy_required = 6.4,
     ingredients = {
@@ -168,8 +160,8 @@ data:extend({
     type = "recipe",
     name = "neodymium-alloy-plate",
     category = "metallurgy",
-    subgroup = "mirandus-processes",
-    order = "c[lithium]-b[lithium-plate]",
+    subgroup = "vulcanus-processes",
+    order = "d[common-proto]-a[neodymium-alloy-plate]",
     icon = "__common-prototypes-graphics__/icons/recipes/casting-neodymium-plate.png",
     auto_recycle = false,
     energy_required = 6.4,
