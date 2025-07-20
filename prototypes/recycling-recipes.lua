@@ -13,7 +13,7 @@ data:extend({
             icon = "__quality__/graphics/icons/recycling.png"
             },
             {
-            icon = "__common-prototypes-graphics__/icons/glass-plate-1.png",
+            icon = "__common-prototypes-graphics__/icons/items/glass-plate-1.png",
             scale = 0.4
             },
             {
@@ -21,7 +21,7 @@ data:extend({
             }
         },
         order = "c[lithium]-b[lithium-plate]",
-        energy_required = 6.4,
+        energy_required = .5,
         ingredients = {
         {type = "item", name = "glass-plate", amount = 1, ignored_by_stats = 1},
         },

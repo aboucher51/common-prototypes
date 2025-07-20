@@ -5,3 +5,10 @@ Date: 01.17.2025
     - initial release
   Bugfixes:
     - lots of bugfixes
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 01.17.2025
+  Changes:
+    - added glass recycling into billet
+  Bugfixes:
+    - bugfix for save-breaking bug on decoupling from metal-and-stars (Big thanks, BoomShroom!)
